@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="shadowsocks," />
+  <meta name="keywords" content="tomcat," />
 
 
 
@@ -84,16 +84,18 @@
 
 
 
-<meta name="description" content="&amp;#x5728;&amp;#x7EC8;&amp;#x7AEF;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;shadowsocks">
+<meta name="description" content="ubuntu&amp;#x4E2D;&amp;#x8BBE;&amp;#x7F6E;Tomcat&amp;#x5F00;&amp;#x673A;&amp;#x542F;&amp;#x52A8;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Use shadowsocks in terminal">
-<meta property="og:url" content="http://Jocoo2015.github.com/2015/05/10/2015-5-10-use-shadowsocks-in-terminal/index.html">
+<meta property="og:title" content="Tomcat autorun in ubuntu">
+<meta property="og:url" content="http://Jocoo2015.github.com/2015/07/02/2015-7-2-tomcat-autorun/index.html">
 <meta property="og:site_name" content="Jocoo's blog">
-<meta property="og:description" content="&amp;#x5728;&amp;#x7EC8;&amp;#x7AEF;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;shadowsocks">
-<meta property="og:updated_time" content="2016-09-26T07:47:05.850Z">
+<meta property="og:description" content="ubuntu&amp;#x4E2D;&amp;#x8BBE;&amp;#x7F6E;Tomcat&amp;#x5F00;&amp;#x673A;&amp;#x542F;&amp;#x52A8;">
+<meta property="og:image" content="http://Jocoo2015.github.com/2015/07/02/2015-7-2-tomcat-autorun/sysv.png">
+<meta property="og:updated_time" content="2017-01-03T03:55:13.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Use shadowsocks in terminal">
-<meta name="twitter:description" content="&amp;#x5728;&amp;#x7EC8;&amp;#x7AEF;&amp;#x4E2D;&amp;#x4F7F;&amp;#x7528;shadowsocks">
+<meta name="twitter:title" content="Tomcat autorun in ubuntu">
+<meta name="twitter:description" content="ubuntu&amp;#x4E2D;&amp;#x8BBE;&amp;#x7F6E;Tomcat&amp;#x5F00;&amp;#x673A;&amp;#x542F;&amp;#x52A8;">
+<meta name="twitter:image" content="http://Jocoo2015.github.com/2015/07/02/2015-7-2-tomcat-autorun/sysv.png">
 
 
 
@@ -114,9 +116,9 @@
 
 
 
-  <link rel="canonical" href="http://Jocoo2015.github.com/2015/05/10/2015-5-10-use-shadowsocks-in-terminal/"/>
+  <link rel="canonical" href="http://Jocoo2015.github.com/2015/07/02/2015-7-2-tomcat-autorun/"/>
 
-  <title> Use shadowsocks in terminal | Jocoo's blog </title>
+  <title> Tomcat autorun in ubuntu | Jocoo's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +238,7 @@
             
             
               
-                Use shadowsocks in terminal
+                Tomcat autorun in ubuntu
               
             
           </h1>
@@ -248,8 +250,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-10T00:00:00+08:00" content="2015-05-10">
-              2015-05-10
+            <time itemprop="dateCreated" datetime="2015-07-02T00:00:00+08:00" content="2015-07-02">
+              2015-07-02
             </time>
           </span>
 
@@ -295,13 +297,12 @@
       
 
       
-        <p>&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x4F7F;&#x7528;shadowsocks<br><a id="more"></a><br>&#x73AF;&#x5883;&#xFF1A;Ubuntu-14.04-LTS-x64</p>
-<h3 id="&#x5B89;&#x88C5;proxychains"><a href="#&#x5B89;&#x88C5;proxychains" class="headerlink" title="&#x5B89;&#x88C5;proxychains"></a>&#x5B89;&#x88C5;proxychains</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install proxychains</div></pre></td></tr></table></figure>
-<!--excerpt-->
-<h3 id="&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a href="#&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="headerlink" title="&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"></a>&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir ~/.proxychains</div><div class="line"><span class="built_in">cd</span> ./proxychains</div><div class="line">vim proxychains.conf</div></pre></td></tr></table></figure>
-<h3 id="&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;"><a href="#&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;" class="headerlink" title="&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;"></a>&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">strict_chain</div><div class="line">proxy_dns</div><div class="line">remote_dns_subnet 224</div><div class="line">tcp_read_time_out 15000</div><div class="line">tcp_connect_time_out 8000</div><div class="line">localnet 127.0.0.0/255.0.0.0</div><div class="line">quiet_mode</div><div class="line">                                                                                 </div><div class="line">[ProxyList]</div><div class="line"><span class="comment">#shadowsocks&#x7684;&#x672C;&#x5730;&#x7AEF;&#x53E3;</span></div><div class="line">socks5  127.0.0.1 1080</div></pre></td></tr></table></figure>
-<h3 id="&#x4F7F;&#x7528;"><a href="#&#x4F7F;&#x7528;" class="headerlink" title="&#x4F7F;&#x7528;"></a>&#x4F7F;&#x7528;</h3><p>&#x76F4;&#x63A5;&#x8F93;&#x5165;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">proxychains bash</div></pre></td></tr></table></figure></p>
-<p>&#x5373;&#x53EF;&#x4F7F;&#x7528;&#xFF0C;&#x5F53;&#x7136;shadowsocks&#x5F97;&#x5F00;&#x542F;</p>
+        <p>ubuntu&#x4E2D;&#x8BBE;&#x7F6E;Tomcat&#x5F00;&#x673A;&#x542F;&#x52A8;<br><a id="more"></a></p>
+<h2 id="&#x5B89;&#x88C5;sysv-rc-conf"><a href="#&#x5B89;&#x88C5;sysv-rc-conf" class="headerlink" title="&#x5B89;&#x88C5;sysv-rc-conf"></a>&#x5B89;&#x88C5;sysv-rc-conf</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install sysv-rc-conf</div></pre></td></tr></table></figure>
+<h2 id="&#x5728;init-d&#x4E2D;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x811A;&#x672C;tomcat"><a href="#&#x5728;init-d&#x4E2D;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x811A;&#x672C;tomcat" class="headerlink" title="&#x5728;init.d&#x4E2D;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x811A;&#x672C;tomcat"></a>&#x5728;init.d&#x4E2D;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x811A;&#x672C;tomcat</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line">TOMCAT_HOME=<span class="string">&apos;/opt/apache-tomcat-7.0.73/bin&apos;</span></div><div class="line"><span class="built_in">export</span> JAVA_HOME=<span class="string">&apos;opt/jdk1.8.0&apos;</span></div><div class="line"><span class="keyword">case</span> <span class="variable">$1</span> <span class="keyword">in</span></div><div class="line">  start)</div><div class="line">    sh <span class="variable">$TOMCAT_HOME</span>/startup.sh</div><div class="line">    ;;</div><div class="line">  stop)</div><div class="line">    sh <span class="variable">$TOMCAT_HOME</span>/shutdown.sh</div><div class="line">    ;;</div><div class="line">  restart)</div><div class="line">    sh <span class="variable">$TOMCAT_HOME</span>/shutdown.sh</div><div class="line">    sh <span class="variable">$TOMCAT_HOME</span>/startup.sh</div><div class="line">    ;;</div><div class="line"><span class="keyword">esac</span></div><div class="line"><span class="built_in">exit</span> 0</div></pre></td></tr></table></figure>
+<h2 id="&#x6DFB;&#x52A0;&#x6267;&#x884C;&#x6743;&#x9650;"><a href="#&#x6DFB;&#x52A0;&#x6267;&#x884C;&#x6743;&#x9650;" class="headerlink" title="&#x6DFB;&#x52A0;&#x6267;&#x884C;&#x6743;&#x9650;"></a>&#x6DFB;&#x52A0;&#x6267;&#x884C;&#x6743;&#x9650;</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod 755 tomcat</div></pre></td></tr></table></figure>
+<h2 id="&#x7528;sysv-rc-conf&#x542F;&#x52A8;tomcat"><a href="#&#x7528;sysv-rc-conf&#x542F;&#x52A8;tomcat" class="headerlink" title="&#x7528;sysv-rc-conf&#x542F;&#x52A8;tomcat"></a>&#x7528;sysv-rc-conf&#x542F;&#x52A8;tomcat</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo sysv-rc-conf on</div></pre></td></tr></table></figure>
+<p>tomcat&#x5DF2;&#x5728;runlevel2,3,4,5&#x4E0A;&#x8FD0;&#x884C;<br><img src="/2015/07/02/2015-7-2-tomcat-autorun/sysv.png" alt="sysv-rc-conf"></p>
 
       
     </div>
@@ -324,7 +325,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/shadowsocks/" rel="tag">#shadowsocks</a>
+            <a href="/tags/tomcat/" rel="tag">#tomcat</a>
           
         </div>
       
@@ -333,12 +334,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/06/23/2015-6-23-install-vim-from-source/" rel="next" title="Install vim from source">
+                <i class="fa fa-chevron-left"></i> Install vim from source
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/06/23/2015-6-23-install-vim-from-source/" rel="prev" title="Install vim from source">
-                Install vim from source <i class="fa fa-chevron-right"></i>
+              <a href="/2015/07/15/2015-7-15-android-touch-event-dispatch-mechanism/" rel="prev" title="Android touch event mechanism">
+                Android touch event mechanism <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -453,7 +458,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装proxychains"><span class="nav-number">1.</span> <span class="nav-text">安装proxychains</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建配置文件"><span class="nav-number">2.</span> <span class="nav-text">创建配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入以下内容："><span class="nav-number">3.</span> <span class="nav-text">输入以下内容：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">4.</span> <span class="nav-text">使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装sysv-rc-conf"><span class="nav-number">1.</span> <span class="nav-text">安装sysv-rc-conf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在init-d中添加启动脚本tomcat"><span class="nav-number">2.</span> <span class="nav-text">在init.d中添加启动脚本tomcat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加执行权限"><span class="nav-number">3.</span> <span class="nav-text">添加执行权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用sysv-rc-conf启动tomcat"><span class="nav-number">4.</span> <span class="nav-text">用sysv-rc-conf启动tomcat</span></a></li></ol></div>
             
           </div>
         </section>
